@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <!-- <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="index.html">UI Design</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul> -->
+    </header>
+    <!-- End header -->
+
+    <div id="lead" class = "CSAI">
+        <div id="lead-content">
+            <h1>Swarm Pathfinding Algorithms<br> </h1>
+            <a href="index.html" class="btn-rounded-white">Return Home</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <!-- <div id="lead-overlay"></div> -->
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h2 class="heading">Project Summary</h2>
+                </div>
+                <div>
+
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        This project focuses on swarm robotics and its application to multi-agent path planning in unfamiliar environments with unknown static obstacles. 
+                        Three emerging algorithms are evaluated: Multi-Agent Deep Deterministic Policy Gradient (MADPG). 
+                        Hybrid Simplified Grey Wolf Optimization with Modified Symbiotic Organism Search (HSGWO-MSOS), and Improved Artificial Potential Field (APF). 
+                        The A* Search algorithm is used as a baseline algorithm for comparison with SOTA methods. 
+                        We compared path planning of these algorithms in a 2D simulated environment, considering execution time, completeness, scalability, and efficiency.
+                        In order to test and evaluate these algorithms, we created a swarm simulation software using python's pygame package.
+                        The simulation software simulates a number of agents navigating an environment to a known goal, through unknown obstacles.
+                    </p>
+                        
+                        <br>
+                    <p>I worked on a team of 4, and was the leading software contributor.</p>
+                        
+                </div>
+                <div class="col-md-4">
+                    <img source src="images/image28.gif" width = "500"/>
+                    <img src="images/image25.gif" width = "500">    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h2 class="heading">Data Collection and Analysis</h2>
+                </div>
+                <div>
+
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        I used batch scripting in order to generate data from hundreds of simulations for each algorithm.
+                        Data such as runtime, pathlength, swarm size, completion percentage, and obstacle difficulty were collected.
+                        We then exported data to excel and used it to compare the 3 algorithms in our report.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/Comparison of Average Path Length in Environment 3_(High Obstacle Complexity) (1).png" width="500">
+                </div>
+                <!-- <div class="col-md-4">
+                    <video controls width="300">
+                        <source src="images\Estop.mp4" type="video/mp4" />
+                    </video>
+                   
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <a href="mailto:contactme.harrisw522@gmail.com"><h3>Email Me Here!</h3></a>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; <span id="current-year">2023</span> Wyatt Harris
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/wyatt522" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <!-- <li>
+                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li> -->
+                        <li>
+                            <a href="https://www.linkedin.com/in/wyatt-harris-b66b10234/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <!-- <li>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

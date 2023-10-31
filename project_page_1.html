@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <!-- <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="index.html">UI Design</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul> -->
+    </header>
+    <!-- End header -->
+
+    <div id="lead" class = "RBE2002">
+        <div id="lead-content">
+            <h1>Robot Swarm Solves Maze <br> </h1>
+            <a href="index.html" class="btn-rounded-white">Return Home</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <!-- <div id="lead-overlay"></div> -->
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h2 class="heading">Project Summary</h2>
+                </div>
+                <div>
+
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        The challenge in Unified Robotics II was to coordinate 3 robots to solve a maze that has a variety of obstacles and variations. The primary obstacle of the challenge is finding and opening a gate to the goal.
+                        The location of the gate is randomized, but is given by an april tag that must be scanned by a camera. 
+                        In order to find what IR signal must be emitted to open the gate, one romi must find the location of the IR button. 
+                        The Romi robots must communicate using an MQTT broker in order to coordinate and solve the maze.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <video controls width="500">
+                        <source src="images\Team 17 Video.mp4" type="video/mp4"/>
+                    </video>
+                   
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h2 class="heading">State Machine</h2>
+                </div>
+                <div>
+
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        All of the robots were programmed using state machine methodology. The IR homing Romi robot's state machine is shown to the right. The state machine methodology provided sufficient 
+                        flexibility to adapt to the many 
+                        potential randomizations within the maze.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/image7.png" width = "500">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h2 class="heading">Robot Wiring</h2>
+                </div>
+                <div>
+
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        HC-SR04 was used for wall following due to its overall reliability. Echo must be on an interrupt pin for good readings.
+Sharp IR was chosen for wall detection, worked well as mechanical solutions could account for its range issues.
+The IR Receiver was wired to pin 14 as an interrupt because remote signals can be very important for emergency stops.
+The IR Beacon was wired into I2C for ease of access, supports data it sends well
+ESP32 was wired in UART because of it’s data capabilities and ease of access. Note the diagram to the left is for the Romi that searches for the IR button. The other Romi's have either an OpenMV camera to read an april tag, or a IR emitter to emit a signal.
+
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/image13.png" width="500">
+                </div>
+                <!-- <div class="col-md-4">
+                    <video controls width="300">
+                        <source src="images\Estop.mp4" type="video/mp4" />
+                    </video>
+                   
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <a href="mailto:contactme.harrisw522@gmail.com"><h3>Email Me Here!</h3></a>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; <span id="current-year">2023</span> Wyatt Harris
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/wyatt522" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <!-- <li>
+                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li> -->
+                        <li>
+                            <a href="https://www.linkedin.com/in/wyatt-harris-b66b10234/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <!-- <li>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
