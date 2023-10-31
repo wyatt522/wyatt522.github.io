@@ -115,7 +115,7 @@
                         HC-SR04 was used for wall following due to its overall reliability. Echo must be on an interrupt pin for good readings.
 Sharp IR was chosen for wall detection, worked well as mechanical solutions could account for its range issues.
 The IR Receiver was wired to pin 14 as an interrupt because remote signals can be very important for emergency stops.
-The IR Beacon was wired into I2C for ease of access, supports data it sends well
+The IR Beacon was wired into I2C for ease of access and data capabilities.
 ESP32 was wired in UART because of it’s data capabilities and ease of access. Note the diagram to the left is for the Romi that searches for the IR button. The other Romi's have either an OpenMV camera to read an april tag, or a IR emitter to emit a signal.
 
                     </p>
