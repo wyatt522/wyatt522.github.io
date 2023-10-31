@@ -1,0 +1,9 @@
+# Site settings
+title: Wyatt Harris Portfolio Site
+url: https://wyatt522.github.io
+
+# GitHub Pages settings
+github:
+  is_project_page: false
+
+theme: minima
