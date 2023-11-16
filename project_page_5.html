@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <!-- <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="index.html">UI Design</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul> -->
+    </header>
+    <!-- End header -->
+
+    <div id="lead" class = "CSAI">
+        <div id="lead-content">
+            <h1>Grip Assist Glove<br> </h1>
+            <a href="index.html" class="btn-rounded-white">Return Home</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <!-- <div id="lead-overlay"></div> -->
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h2 class="heading">Mechanics</h2>
+                </div>
+                <div>
+
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        The glove uses a linear actuator in order to contract and release fingers. The motor is tied with a string to the ends of fingers, and 
+                        when it extends the fingers are forced to grip, and when it releases thin springs return the hand to an open grip. To ensure the motor 
+                        has enough power to pick up small objects, I conducted research into similar projects. 
+                        I 3D modelled mounts that are 3D printed and hot glued onto a glove 
+                        in order to secure the motors, as well as to stabalize the thumb for grip.
+                    </p>   
+                </div>
+                <div class="col-md-4">
+                    <img src="images/gripassistwide.png" width="500">
+                    <video controls width="500">
+                        <source src="images\GripAssist.mp4" type="video/mp4" />
+                    </video>
+                   
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h2 class="heading">Wiring</h2>
+                </div>
+                <div>
+
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        The glove utilizes an Arduino Nano BLE in order to connect to the mobile app, and control the motor. Based on available datasheets, an 
+                        Arduino Nano is not capable of providing sufficient power for our linear actuator. To overcome this, signals are sent to a 2-channel relay, which is 
+                        connected to a power supply and the motor.
+                        <!-- We are currently creating a PCB design that will compact the device further.  -->
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/Schematic.png" width="500">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h2 class="heading">Mobile App</h2>
+                </div>
+                <div>
+
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        We created a mobile app using MIT app inventor in order to open and close the glove. It takes an input, and sends it to the Arduino Nano via a BLE connection. 
+                        The arduino nano advertises itself as a peripheral, with a control characteristic. The mobile phone acts as a central device, and writes 
+                        to a control characteristic.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/mobileapp.jpg" width="500">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <h3>Email: harrisw522@gmail.com</h3>
+        <h3>Phone: 781-690-3302</h3>
+        <h3>Location: Belmont, MA</h3>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; <span id="current-year">2023</span> Wyatt Harris
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/wyatt522" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <!-- <li>
+                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li> -->
+                        <li>
+                            <a href="https://www.linkedin.com/in/wyatt-harris-b66b10234/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <!-- <li>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
