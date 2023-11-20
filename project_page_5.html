@@ -73,16 +73,16 @@
                 <div class="col-md-4">
                     <p>
                         The glove uses a linear actuator in order to contract and release fingers. The motor is tied with a string to the ends of fingers, and 
-                        when it extends the fingers are forced to grip, and when it releases thin springs return the hand to an open grip. To ensure the motor 
-                        has enough power to pick up small objects, I conducted research into similar projects. 
-                        I 3D modelled mounts that are 3D printed and hot glued onto a glove 
-                        in order to secure the motors, as well as to stabalize the thumb for grip.
+                        when it extends the fingers are forced to grip, and when it releases flat springs return the hand to an open grip. To ensure the motor 
+                        has enough power to grip small objects, I conducted research into similar projects. 
+                        I 3D modelled mounts that are 3D printed and attached onto the glove 
+                        in order to secure the motors.
                     </p>   
                 </div>
                 <div class="col-md-4">
-                    <img src="images/gripassistwide.png" width="500">
+                    <img src="images/SquareGlove.jpg" width="500">
                     <video controls width="500">
-                        <source src="images\GripAssist.mp4" type="video/mp4" />
+                        <source src="images\handopenclose.mp4" type="video/mp4" />
                     </video>
                    
                 </div>
@@ -96,10 +96,9 @@
                 </div>
                 <div class="col-md-4">
                     <p>
-                        The glove utilizes an Arduino Nano BLE in order to connect to the mobile app, and control the motor. Based on available datasheets, an 
+                        The glove utilizes an Arduino Nano BLE in order to connect to a mobile app, and control the motor. Based on available datasheets, an 
                         Arduino Nano is not capable of providing sufficient power for our linear actuator. To overcome this, signals are sent to a 2-channel relay, which is 
                         connected to a power supply and the motor.
-                        <!-- We are currently creating a PCB design that will compact the device further.  -->
                     </p>
                 </div>
                 <div class="col-md-4">
@@ -115,13 +114,13 @@
                 </div>
                 <div class="col-md-4">
                     <p>
-                        We created a mobile app using MIT app inventor in order to open and close the glove. It takes an input, and sends it to the Arduino Nano via a BLE connection. 
-                        The arduino nano advertises itself as a peripheral, with a control characteristic. The mobile phone acts as a central device, and writes 
-                        to a control characteristic.
+                        We created a mobile app in order to open and close the glove using voice control. It takes an input, and writes it to the Arduino Nano via a BLE connection. 
+                        I programmed the arduino nano to advertise itself as a peripheral with a control characteristic. The mobile phone acts as a central device, and writes 
+                        to the available characteristic using it's service and characteristic UUID.
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <img src="images/mobileapp.jpg" width="500">
+                    <img src="images/App.jpg" width="500">
                 </div>
             </div>
         </div>
