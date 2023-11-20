@@ -895,9 +895,11 @@ footer {
         float: none
     }
 
-    /* .project-image {
-        display: none
-    } */
+    .project-image {
+        width: 100%;
+        padding: 30px 30px
+        /* display: none */
+    }
 
     .project-info {
         position: relative;
