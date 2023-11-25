@@ -72,56 +72,53 @@
                 </div>
                 <div class="col-md-4">
                     <p>
-                        The challenge in Unified Robotics II was to coordinate 3 robots to solve a maze that has a variety of obstacles and variations. The primary obstacle of the challenge is finding and opening a gate to the goal.
-                        The location of the gate is randomized, but is given by an april tag that must be scanned by a camera. 
-                        In order to find what IR signal must be emitted to open the gate, one romi must find the location of the IR button. 
-                        The Romi robots must communicate using an MQTT broker in order to coordinate and solve the maze.
+                        Batipa Field Station (BFS) is located in the Chiriqui Province of Panama, and is always looking to 
+                        become more sustainable. Through WPI, they sponsored my groups project on biofiltration. We researched,
+                        designed, and implemented a greywater biofiltration system for them. We also created educational material 
+                        so that BFS can spread information about biofiltration.
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <video controls width="500">
-                        <source src="images\Team 17 Video.mp4" type="video/mp4"/>
-                    </video>
-                   
+                    <img src="images/complete_system.png" width = "500">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-2">
-                    <h2 class="heading">State Machine</h2>
+                    <h2 class="heading">Design</h2>
                 </div>
                 <div>
 
                 </div>
                 <div class="col-md-4">
                     <p>
-                        All of the robots were programmed using state machine methodology. The IR homing Romi robot's state machine is shown to the right. The state machine methodology provided sufficient 
-                        flexibility to adapt to the many 
-                        potential randomizations within the maze.
+                        I prepared for the trip to Panama by conducting archival research on the topic of biofiltration. I corroborated 
+                        sources on the effectiveness of a variety of materials. As a group, we contacted experts and interviewed them. 
+                        Upon arrival, we met with our sponsor to better understand the needs of BFS specifically. Based on these 3 
+                        methodologies, we created a final design. I turned it into a 3D model that we could follow as we implemented it 
+                        at BFS.
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <img src="images/image7.png" width = "500">
+                    <img src="images/Design_model.png" width = "500">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-2">
-                    <h2 class="heading">Robot Wiring</h2>
+                    <h2 class="heading">Educational Model</h2>
                 </div>
                 <div>
 
                 </div>
                 <div class="col-md-4">
                     <p>
-                        HC-SR04 was used for wall following due to its overall reliability. Echo must be on an interrupt pin for good readings.
-Sharp IR was chosen for wall detection, worked well as mechanical solutions could account for its range issues.
-The IR Receiver was wired to pin 14 as an interrupt because remote signals can be very important for emergency stops.
-The IR Beacon was wired into I2C for ease of access and data capabilities.
-ESP32 was wired in UART because of it’s data capabilities and ease of access. Note the diagram to the left is for the Romi that searches for the IR button. The other Romi's have either an OpenMV camera to read an april tag, or a IR emitter to emit a signal.
-
+                        One of our goals was to ensure that anybody could build or replicate our design. In order to do so, 
+                        we took an empty bottle, and filled it with the materials used inside of our bucket filter. Our sponsor is 
+                        now able to show people our design, and the materials inside our design without opening it up. Additionally, 
+                        we created a poster and research paper for our project.
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <img src="images/image13.png" width="500">
+                    <img src="images/Educational_model.png" width="500">
                 </div>
                 <!-- <div class="col-md-4">
                     <video controls width="300">
