@@ -46,8 +46,8 @@
     <div id="lead" class = "homepage-top">
         <div id="lead-content">
             <h1>Wyatt Harris</h1>
-            <h2>Junior at Worcester Polytechnic Institute</h2>
-            <h2>BS/MS Robotics Engineering Major</h2>
+            <h2>Senior at Worcester Polytechnic Institute</h2>
+            <h2>BS/MS Robotics Engineering</h2>
             <a href="Fall 2023 Resume.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
@@ -98,21 +98,23 @@
     <div id="education">
         <h2 class="heading">Summary</h2>
         <div class="education-block">
-            <h3>I'm a 3rd year at Worcester Polytechnic Insitute completing a BS/MS in Robotics Engineering</h3>
+            <h3>I'm a 4th year at Worcester Polytechnic Insitute completing a BS/MS in Robotics Engineering</h3>
             <h4><br>Experience:</h4>
             <ul>
+                <li>Software Engineering Intern- Neurala</li>
                 <li>Prototyping Lab Assistant- WPI</li>
                 <li>Math Tutor- Mathnasium</li>
             </ul>
             <h4><br>Projects:</h4>
             <ul>
+                <li>Pick and Place Robot Arm- Unified Robotics III: Manipulation</li>
+                <li>SLAM Robot- Unified Robotics IV: SLAM and Navigation</li>
                 <li>Robot Swarm Maze Solver- Unified Robotics II: Sensing</li>
                 <li>Swarm Pathfinding Algorithms- Artificial Intelligence</li>
-                <li>SLAM Robot- Unified Robotics IV: SLAM and Navigation</li>
                 <li>Administration Software- Software Engineering</li>
                 <li>Robot Fourbar Mechanism- Unified Robotics I: Motion</li>
-                <li>Water Biofiltration- Interactive Qualifying Project</Pre></li>
                 <li>Grip Assist Glove- Research Project</li>
+                <li>Water Biofiltration- Interactive Qualifying Project</Pre></li>
                 <li>Guitarduino- Musical Robotics</li>
                 <li>Video Game Mod- Independent Project</li>
                 
@@ -126,6 +128,27 @@
 
     <div id="projects"  class="background-alt">
         <h2 class="heading">Portfolio</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/RobotArm300x300.png"  />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Unified Robotics III: Pick and Place Robotic Arm</h3>
+                        <p>
+                            I programmed a 4 degree of freedom robotic arm to pick up and sorts balls by color.
+                            A camera recognizes balls and other objects with an Image Processing Pipeline created in Matlab.
+                            The arm is controlled with forward and inverse kinematics as well as polynomial trajectory planning.
+                        </p>
+                        <a href="project_page_8.html">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div> 
         <div class="container">
             <div class="row">
                 <div class="project shadow-large">
@@ -176,7 +199,7 @@
                     <div class="project-info">
                         <h3>Artificial Intelligence: Swarm Pathfinding Algorithms</h3>
                         <p>
-                            I created swarm robot simulation software using python’s matplot and pygame. Our group replicated, analyzed, and compared 3 emerging swarm pathfinding algorithms.
+                            I created swarm robot simulation software using python’s matplot and pygame. Our group replicated, analyzed, and compared 3 emerging swarm pathfinding algorithms. We published our results in the ICEIS.
                         </p>
                         <a href="project_page_2.html">View Project</a>
                     </div>
@@ -293,6 +316,15 @@
     <div id="experience">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
+
+            <div data-date="May 2024 - August 2024">
+                <h3>Software Engineering Intern</h3>
+                <h4>Neurala</h4>
+                <p>
+                    I developed and automated Python test suite for an Object Detection Pipeline. The tests ensure compatibility between a variety of frameworks, architectures, etc. As I created tests, I also identified, documented, and solved a variety of bugs detected. I utilized Jenkins and Docker to automate the test suite to regularly run on the codebase.
+                </p>
+            </div>
+
             <div data-date="April 2023 – Now">
                 <h3>Prototyping Lab Assistant</h3>
                 <h4>Worcester Polytechnic Institute Makerspace</h4>
@@ -328,7 +360,7 @@
                     Club Ultimate Frisbee
                 </li>
                 <li>
-                    Phi Kappa Theta Fraternity- Quartermaster
+                    Phi Kappa Theta Fraternity- House Manager
                 </li>
                 <li>
                     Chess Club
@@ -370,13 +402,14 @@
             <li>C</li>
             <li>MathCAD</li>
             
-            
         </ul>
         <h3>Software</h3>
         <ul>
             <li>Solidworks</li>
             <li>Linux</li>
-            <li>Inkscape</li> 
+            <li>Inkscape</li>
+            <li>Jenkins</li>
+            <li>Docker</li>
         </ul>
         <h3>Other</h3>
         <ul>
